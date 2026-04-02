@@ -1,0 +1,431 @@
+{
+  "stadiums": [
+    {
+      "id": "stadium-azteca",
+      "name": "Estadio Azteca",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "address": "Calz. de Tlalpan 3465, Santa Úrsula Coapa, Coyoacán, 04650 Ciudad de México, CDMX",
+      "latitude": 19.3029,
+      "longitude": -99.1505,
+      "capacity": 87523,
+      "timezone": "America/Mexico_City",
+      "entryGates": [
+        {
+          "id": "gate-azteca-north",
+          "name": "North Gate",
+          "latitude": 19.3039,
+          "longitude": -99.1505,
+          "recommendedFor": ["100-150"],
+          "capacity": 15000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-azteca-south",
+          "name": "South Gate",
+          "latitude": 19.3019,
+          "longitude": -99.1505,
+          "recommendedFor": ["200-250"],
+          "capacity": 12000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": "estadioazteca",
+      "foodOrderingAppName": "Estadio Azteca",
+      "foodOrderingWebURL": "https://www.estadioazteca.com.mx"
+    },
+    {
+      "id": "stadium-akron",
+      "name": "Estadio Akron",
+      "city": "Guadalajara",
+      "country": "Mexico",
+      "address": "Av. Estadio Chivas, Zapopan, 45110 Jalisco",
+      "latitude": 20.6899,
+      "longitude": -103.4632,
+      "capacity": 46232,
+      "timezone": "America/Mexico_City",
+      "entryGates": [
+        {
+          "id": "gate-akron-main",
+          "name": "Main Gate",
+          "latitude": 20.6909,
+          "longitude": -103.4632,
+          "recommendedFor": ["100-200"],
+          "capacity": 10000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.estadioakron.com"
+    },
+    {
+      "id": "stadium-bbva",
+      "name": "Estadio BBVA",
+      "city": "Monterrey",
+      "country": "Mexico",
+      "address": "Av. Pablo Livas 2011, La Pastora, Guadalupe, 67140 N.L.",
+      "latitude": 25.7237,
+      "longitude": -100.2442,
+      "capacity": 53500,
+      "timezone": "America/Monterrey",
+      "entryGates": [
+        {
+          "id": "gate-bbva-north",
+          "name": "North Gate",
+          "latitude": 25.7247,
+          "longitude": -100.2442,
+          "recommendedFor": ["100-200"],
+          "capacity": 12000,
+          "currentCrowdLevel": "moderate"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.estadiobbva.com"
+    },
+    {
+      "id": "stadium-metlife",
+      "name": "MetLife Stadium",
+      "city": "New York / New Jersey",
+      "country": "USA",
+      "address": "1 MetLife Stadium Dr, East Rutherford, NJ 07073",
+      "latitude": 40.8128,
+      "longitude": -74.0742,
+      "capacity": 82500,
+      "timezone": "America/New_York",
+      "entryGates": [
+        {
+          "id": "gate-metlife-a",
+          "name": "Gate A",
+          "latitude": 40.8138,
+          "longitude": -74.0742,
+          "recommendedFor": ["100-150"],
+          "capacity": 15000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-metlife-b",
+          "name": "Gate B",
+          "latitude": 40.8118,
+          "longitude": -74.0742,
+          "recommendedFor": ["200-250"],
+          "capacity": 12000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": "metlifestadium",
+      "foodOrderingAppName": "MetLife Stadium",
+      "foodOrderingWebURL": "https://www.metlifestadium.com"
+    },
+    {
+      "id": "stadium-sofi",
+      "name": "SoFi Stadium",
+      "city": "Los Angeles",
+      "country": "USA",
+      "address": "1001 Stadium Dr, Inglewood, CA 90301",
+      "latitude": 33.9535,
+      "longitude": -118.3392,
+      "capacity": 70240,
+      "timezone": "America/Los_Angeles",
+      "entryGates": [
+        {
+          "id": "gate-sofi-main",
+          "name": "Main Gate",
+          "latitude": 33.9545,
+          "longitude": -118.3392,
+          "recommendedFor": ["100-200"],
+          "capacity": 14000,
+          "currentCrowdLevel": "moderate"
+        }
+      ],
+      "foodOrderingAppScheme": "sofistadium",
+      "foodOrderingAppName": "SoFi Stadium",
+      "foodOrderingWebURL": "https://www.sofistadium.com"
+    },
+    {
+      "id": "stadium-att",
+      "name": "AT&T Stadium",
+      "city": "Dallas",
+      "country": "USA",
+      "address": "1 AT&T Way, Arlington, TX 76011",
+      "latitude": 32.7473,
+      "longitude": -97.0945,
+      "capacity": 80000,
+      "timezone": "America/Chicago",
+      "entryGates": [
+        {
+          "id": "gate-att-main",
+          "name": "Main Gate",
+          "latitude": 32.7483,
+          "longitude": -97.0945,
+          "recommendedFor": ["100-200"],
+          "capacity": 16000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": "attstadium",
+      "foodOrderingAppName": "AT&T Stadium",
+      "foodOrderingWebURL": "https://www.attstadium.com"
+    },
+    {
+      "id": "stadium-hardrock",
+      "name": "Hard Rock Stadium",
+      "city": "Miami",
+      "country": "USA",
+      "address": "347 Don Shula Dr, Miami Gardens, FL 33056",
+      "latitude": 25.9580,
+      "longitude": -80.2389,
+      "capacity": 65326,
+      "timezone": "America/New_York",
+      "entryGates": [
+        {
+          "id": "gate-north-a",
+          "name": "North Gate A",
+          "latitude": 25.9590,
+          "longitude": -80.2389,
+          "recommendedFor": ["101-120"],
+          "capacity": 12000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-south-c",
+          "name": "South Gate C",
+          "latitude": 25.9570,
+          "longitude": -80.2389,
+          "recommendedFor": ["201-220"],
+          "capacity": 10000,
+          "currentCrowdLevel": "moderate"
+        }
+      ],
+      "foodOrderingAppScheme": "hardrockstadium",
+      "foodOrderingAppName": "Hard Rock Stadium",
+      "foodOrderingWebURL": "https://www.hardrockstadium.com/concessions"
+    },
+    {
+      "id": "stadium-mercedes-benz",
+      "name": "Mercedes-Benz Stadium",
+      "city": "Atlanta",
+      "country": "USA",
+      "address": "1 AMB Dr NW, Atlanta, GA 30313",
+      "latitude": 33.7553,
+      "longitude": -84.4006,
+      "capacity": 71000,
+      "timezone": "America/New_York",
+      "entryGates": [
+        {
+          "id": "gate-mb-north",
+          "name": "North Gate",
+          "latitude": 33.7563,
+          "longitude": -84.4006,
+          "recommendedFor": ["100-200"],
+          "capacity": 14000,
+          "currentCrowdLevel": "moderate"
+        }
+      ],
+      "foodOrderingAppScheme": "mbstadium",
+      "foodOrderingAppName": "Mercedes-Benz Stadium",
+      "foodOrderingWebURL": "https://mercedesbenzstadium.com"
+    },
+    {
+      "id": "stadium-levis",
+      "name": "Levi's Stadium",
+      "city": "San Francisco Bay Area",
+      "country": "USA",
+      "address": "4900 Marie P DeBartolo Way, Santa Clara, CA 95054",
+      "latitude": 37.4032,
+      "longitude": -121.9697,
+      "capacity": 68500,
+      "timezone": "America/Los_Angeles",
+      "entryGates": [
+        {
+          "id": "gate-levis-main",
+          "name": "Main Gate",
+          "latitude": 37.4042,
+          "longitude": -121.9697,
+          "recommendedFor": ["100-200"],
+          "capacity": 13000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": "levisstadium",
+      "foodOrderingAppName": "Levi's Stadium",
+      "foodOrderingWebURL": "https://www.levisstadium.com"
+    },
+    {
+      "id": "stadium-lincoln",
+      "name": "Lincoln Financial Field",
+      "city": "Philadelphia",
+      "country": "USA",
+      "address": "1 Lincoln Financial Field Way, Philadelphia, PA 19148",
+      "latitude": 39.9008,
+      "longitude": -75.1675,
+      "capacity": 69796,
+      "timezone": "America/New_York",
+      "entryGates": [
+        {
+          "id": "gate-lincoln-main",
+          "name": "Main Gate",
+          "latitude": 39.9018,
+          "longitude": -75.1675,
+          "recommendedFor": ["100-200"],
+          "capacity": 13000,
+          "currentCrowdLevel": "moderate"
+        }
+      ],
+      "foodOrderingAppScheme": "lincolnfinancialfield",
+      "foodOrderingAppName": "Lincoln Financial Field",
+      "foodOrderingWebURL": "https://www.lincolnfinancialfield.com"
+    },
+    {
+      "id": "stadium-arrowhead",
+      "name": "Arrowhead Stadium",
+      "city": "Kansas City",
+      "country": "USA",
+      "address": "1 Arrowhead Dr, Kansas City, MO 64129",
+      "latitude": 39.0489,
+      "longitude": -94.4839,
+      "capacity": 76416,
+      "timezone": "America/Chicago",
+      "entryGates": [
+        {
+          "id": "gate-arrowhead-main",
+          "name": "Main Gate",
+          "latitude": 39.0499,
+          "longitude": -94.4839,
+          "recommendedFor": ["100-200"],
+          "capacity": 15000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": "arrowheadstadium",
+      "foodOrderingAppName": "Arrowhead Stadium",
+      "foodOrderingWebURL": "https://www.arrowheadstadium.com"
+    },
+    {
+      "id": "stadium-gillette",
+      "name": "Gillette Stadium",
+      "city": "Boston",
+      "country": "USA",
+      "address": "1 Patriot Pl, Foxborough, MA 02035",
+      "latitude": 42.0909,
+      "longitude": -71.2643,
+      "capacity": 65878,
+      "timezone": "America/New_York",
+      "entryGates": [
+        {
+          "id": "gate-gillette-main",
+          "name": "Main Gate",
+          "latitude": 42.0919,
+          "longitude": -71.2643,
+          "recommendedFor": ["100-200"],
+          "capacity": 13000,
+          "currentCrowdLevel": "moderate"
+        }
+      ],
+      "foodOrderingAppScheme": "gillettestadium",
+      "foodOrderingAppName": "Gillette Stadium",
+      "foodOrderingWebURL": "https://www.gillettestadium.com"
+    },
+    {
+      "id": "stadium-nrg",
+      "name": "NRG Stadium",
+      "city": "Houston",
+      "country": "USA",
+      "address": "NRG Pkwy, Houston, TX 77054",
+      "latitude": 29.6847,
+      "longitude": -95.4107,
+      "capacity": 72220,
+      "timezone": "America/Chicago",
+      "entryGates": [
+        {
+          "id": "gate-nrg-main",
+          "name": "Main Gate",
+          "latitude": 29.6857,
+          "longitude": -95.4107,
+          "recommendedFor": ["100-200"],
+          "capacity": 14000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": "nrgstadium",
+      "foodOrderingAppName": "NRG Stadium",
+      "foodOrderingWebURL": "https://www.nrgpark.com"
+    },
+    {
+      "id": "stadium-lumen",
+      "name": "Lumen Field",
+      "city": "Seattle",
+      "country": "USA",
+      "address": "800 Occidental Ave S, Seattle, WA 98134",
+      "latitude": 47.5952,
+      "longitude": -122.3316,
+      "capacity": 69000,
+      "timezone": "America/Los_Angeles",
+      "entryGates": [
+        {
+          "id": "gate-lumen-main",
+          "name": "Main Gate",
+          "latitude": 47.5962,
+          "longitude": -122.3316,
+          "recommendedFor": ["100-200"],
+          "capacity": 13000,
+          "currentCrowdLevel": "moderate"
+        }
+      ],
+      "foodOrderingAppScheme": "lumenfield",
+      "foodOrderingAppName": "Lumen Field",
+      "foodOrderingWebURL": "https://www.lumenfield.com"
+    },
+    {
+      "id": "stadium-bmo",
+      "name": "BMO Field",
+      "city": "Toronto",
+      "country": "Canada",
+      "address": "170 Princes' Blvd, Toronto, ON M6K 3C3",
+      "latitude": 43.6333,
+      "longitude": -79.4187,
+      "capacity": 45500,
+      "timezone": "America/Toronto",
+      "entryGates": [
+        {
+          "id": "gate-bmo-main",
+          "name": "Main Gate",
+          "latitude": 43.6343,
+          "longitude": -79.4187,
+          "recommendedFor": ["100-200"],
+          "capacity": 9000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": "bmofield",
+      "foodOrderingAppName": "BMO Field",
+      "foodOrderingWebURL": "https://www.bmofield.com"
+    },
+    {
+      "id": "stadium-bcplace",
+      "name": "BC Place",
+      "city": "Vancouver",
+      "country": "Canada",
+      "address": "777 Pacific Blvd, Vancouver, BC V6B 4Y8",
+      "latitude": 49.2768,
+      "longitude": -123.1119,
+      "capacity": 54500,
+      "timezone": "America/Vancouver",
+      "entryGates": [
+        {
+          "id": "gate-bcplace-main",
+          "name": "Main Gate",
+          "latitude": 49.2778,
+          "longitude": -123.1119,
+          "recommendedFor": ["100-200"],
+          "capacity": 11000,
+          "currentCrowdLevel": "moderate"
+        }
+      ],
+      "foodOrderingAppScheme": "bcplace",
+      "foodOrderingAppName": "BC Place",
+      "foodOrderingWebURL": "https://www.bcplace.com"
+    }
+  ]
+}

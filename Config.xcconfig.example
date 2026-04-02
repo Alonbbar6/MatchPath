@@ -1,0 +1,11 @@
+// Configuration file for API credentials
+// Copy this file to Config.xcconfig and fill in your actual API keys
+// NEVER commit Config.xcconfig to git
+
+SOCCER_API_URL = https://v3.football.api-sports.io/fixtures
+SOCCER_API_KEY = YOUR_SOCCER_API_KEY_HERE
+SOCCER_API_KEY_HEADER = x-apisports-key
+
+GOOGLE_MAPS_API = YOUR_GOOGLE_MAPS_API_KEY_HERE
+
+WeatherApi = YOUR_WEATHER_API_KEY_HERE

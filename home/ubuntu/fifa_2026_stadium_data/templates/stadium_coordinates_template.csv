@@ -1,8 +1,0 @@
-stadium_id,stadium_name,feature_type,feature_id,feature_name,latitude,longitude,altitude,floor,level_id,local_x,local_y,local_z,description,accessible,additional_info
-hard-rock-stadium,Hard Rock Stadium,gate,gate-north,North Gate,25.9590,-80.2389,3.0,1,100-level,0.0,110.0,0.0,Main entrance on north side,TRUE,serves_sections:313-333
-hard-rock-stadium,Hard Rock Stadium,gate,gate-south,South Gate,25.9570,-80.2389,3.0,1,100-level,0.0,-110.0,0.0,Main entrance on south side,TRUE,serves_sections:341-351
-hard-rock-stadium,Hard Rock Stadium,gate,gate-east,East Gate,25.9580,-80.2379,3.0,1,100-level,90.0,0.0,0.0,Main entrance on east side,TRUE,serves_sections:226-236
-hard-rock-stadium,Hard Rock Stadium,gate,gate-west,West Gate,25.9580,-80.2399,3.0,1,100-level,-90.0,0.0,0.0,Main entrance on west side,TRUE,serves_sections:101-111
-hard-rock-stadium,Hard Rock Stadium,section,101,Section 101,25.9578,-80.2395,3.0,1,100-level,-50.0,-20.0,0.0,Lower bowl seating section,TRUE,rows:1-30|seats_per_row:20
-hard-rock-stadium,Hard Rock Stadium,restroom,restroom-west-1,West Restrooms,25.9580,-80.2397,3.0,1,100-level,-70.0,0.0,0.0,Main restrooms near west gate,TRUE,gender:all|family:yes
-hard-rock-stadium,Hard Rock Stadium,concession,concession-west-1,West Concessions,25.9580,-80.2396,3.0,1,100-level,-65.0,10.0,0.0,Main concession stand,TRUE,vendors:Various
