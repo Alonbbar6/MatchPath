@@ -1,4 +1,4 @@
-# FIFA Schedule Builder - Setup Complete! 🎉
+# MatchPath - Setup Complete! 🎉
 
 ## Status: ✅ BUILD SUCCESSFUL
 
@@ -30,7 +30,7 @@ All async/await integration errors have been resolved. Your crowd-avoiding routi
 Your app needs a Google Maps API key to function. Here's how to get one:
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com)
-2. Create a new project: **"FIFA Schedule Builder"**
+2. Create a new project: **"MatchPath"**
 3. Enable these APIs:
    - ✅ Geocoding API
    - ✅ Directions API
@@ -45,7 +45,7 @@ Option A - Environment Variable (easiest for testing):
 export GOOGLE_MAPS_API_KEY="YOUR_API_KEY_HERE"
 ```
 
-Option B - Hardcode for testing (in [GoogleMapsConfig.swift](FIFAScheduleBuilder/Configuration/GoogleMapsConfig.swift:19)):
+Option B - Hardcode for testing (in [GoogleMapsConfig.swift](MatchPath/Configuration/GoogleMapsConfig.swift:19)):
 ```swift
 static let apiKey: String = {
     return "YOUR_API_KEY_HERE"  // Replace with your key
@@ -57,9 +57,9 @@ static let apiKey: String = {
 If you still see "Undefined symbol: _main" error:
 
 1. Open your project in Xcode
-2. Find `FIFAScheduleBuilderApp.swift` in the left sidebar
+2. Find `MatchPathApp.swift` in the left sidebar
 3. Right-click → "Show File Inspector"
-4. Under "Target Membership", check ✅ FIFAScheduleBuilder
+4. Under "Target Membership", check ✅ MatchPath
 5. Clean and rebuild (⌘+Shift+K, then ⌘+B)
 
 ### Step 3: Test the Feature
@@ -78,22 +78,22 @@ If you still see "Undefined symbol: _main" error:
 
 ### Service Layer
 
-**[GoogleGeocodingService.swift](FIFAScheduleBuilder/Services/GoogleMaps/GoogleGeocodingService.swift)**
+**[GoogleGeocodingService.swift](MatchPath/Services/GoogleMaps/GoogleGeocodingService.swift)**
 - Converts user addresses → coordinates
 - Used when user enters their hotel address
 
-**[GoogleDirectionsService.swift](FIFAScheduleBuilder/Services/GoogleMaps/GoogleDirectionsService.swift)**
+**[GoogleDirectionsService.swift](MatchPath/Services/GoogleMaps/GoogleDirectionsService.swift)**
 - Gets routes with real-time traffic data
 - Returns multiple alternatives
 - Calculates traffic delays
 
-**[CrowdIntelligenceService.swift](FIFAScheduleBuilder/Services/CrowdIntelligence/CrowdIntelligenceService.swift)**
+**[CrowdIntelligenceService.swift](MatchPath/Services/CrowdIntelligence/CrowdIntelligenceService.swift)**
 - Scores routes by speed + crowd levels
 - Forecasts stadium crowd patterns
 - Recommends best entry gates
 - Default: 70% crowd avoidance, 30% speed
 
-**[ScheduleGeneratorService.swift](FIFAScheduleBuilder/Services/ScheduleGeneratorService.swift)** (Updated)
+**[ScheduleGeneratorService.swift](MatchPath/Services/ScheduleGeneratorService.swift)** (Updated)
 - Orchestrates all services
 - Generates complete game-day schedule
 - Works backwards from kickoff time
@@ -131,7 +131,7 @@ The generated schedule includes:
 
 ## Configuration Options
 
-Edit [GoogleMapsConfig.swift](FIFAScheduleBuilder/Configuration/GoogleMapsConfig.swift) to customize:
+Edit [GoogleMapsConfig.swift](MatchPath/Configuration/GoogleMapsConfig.swift) to customize:
 
 ### Crowd Avoidance Weight
 ```swift
@@ -271,7 +271,7 @@ Fetches alternative routes and picks the best one for you.
 
 ## Congratulations! 🎉
 
-Your FIFA Schedule Builder now has:
+Your MatchPath now has:
 - ✅ Real-time traffic integration
 - ✅ Crowd-avoiding routing
 - ✅ Smart departure time calculation

@@ -102,3 +102,11 @@ iOSInjectionProject/
 # Archives
 *.xcarchive
 Export/
+
+# Sensitive configuration files with API keys
+Config.xcconfig
+GoogleService-Info.plist
+MatchPath/GoogleService-Info.plist
+FIFAScheduleBuilder/GoogleService-Info.plist
+Backend/.env
+Backend/fifa_2026.db

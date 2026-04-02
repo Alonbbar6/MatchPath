@@ -57,13 +57,13 @@ User → Time-based prediction (40-80% weight)
 ### Option 1: Quick Test (5 minutes)
 
 1. Open your project in Xcode
-2. Add this to your `FIFAScheduleBuilderApp.swift`:
+2. Add this to your `MatchPathApp.swift`:
 
 ```swift
 import SwiftUI
 
 @main
-struct FIFAScheduleBuilderApp: App {
+struct MatchPathApp: App {
     init() {
         // Test transit crowd data on launch
         Task {

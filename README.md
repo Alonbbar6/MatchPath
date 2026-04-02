@@ -1,6 +1,6 @@
-# FIFA Schedule Builder
+# MatchPath
 
-A comprehensive iOS application built with Swift and SwiftUI for planning your perfect FIFA World Cup match day experience. This app helps fans create personalized schedules for attending matches, including transportation, stadium entry, and pre-game activities.
+A comprehensive iOS application built with Swift and SwiftUI for planning your perfect game day experience. This app helps fans create personalized schedules for attending sporting events, including transportation, stadium entry, and pre-game activities.
 
 ## Features
 
@@ -187,4 +187,4 @@ For support and questions:
 
 ---
 
-**Soccer League Tracker** - Your ultimate companion for following soccer leagues and teams! ⚽
+**MatchPath** - Your ultimate companion for game day planning!

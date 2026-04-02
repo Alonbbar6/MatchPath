@@ -2,7 +2,7 @@
 
 ## ✅ Feature Complete!
 
-Your FIFA Schedule Builder now has **REAL** Google Maps integration with:
+Your MatchPath now has **REAL** Google Maps integration with:
 - ✅ Real-time traffic data
 - ✅ Crowd-avoiding routing
 - ✅ Multiple route options
@@ -16,7 +16,7 @@ Your FIFA Schedule Builder now has **REAL** Google Maps integration with:
 ### Step 1: Get Google Maps API Key
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com)
-2. Create a new project: **"FIFA Schedule Builder"**
+2. Create a new project: **"MatchPath"**
 3. Enable these APIs:
    - ✅ **Geocoding API** (convert addresses to coordinates)
    - ✅ **Directions API** (get routes with traffic)
@@ -126,7 +126,7 @@ let bestRoute = scoredRoutes.first // Fastest + least crowded!
 
 ### What Users See:
 1. Enter their hotel address
-2. Select FIFA game
+2. Select their event
 3. Choose arrival preference (early/on-time/late)
 4. Get personalized schedule with:
    - ✅ Real travel time with traffic
