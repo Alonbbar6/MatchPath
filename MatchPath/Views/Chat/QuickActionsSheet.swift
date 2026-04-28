@@ -760,16 +760,23 @@ struct ActionDetailView: View {
                         }
 
                         if action.id == "lost" {
-                            Button {
-                                // TODO: Open AR compass
-                                dismiss()
-                            } label: {
-                                ActionButtonRow(
-                                    icon: "safari",
-                                    title: "Use AR Compass",
-                                    color: .blue
-                                )
+                            HStack {
+                                Image(systemName: "safari")
+                                    .foregroundColor(.gray)
+                                Text("AR Compass")
+                                    .foregroundColor(.secondary)
+                                Spacer()
+                                Text("Coming Soon")
+                                    .font(.caption)
+                                    .padding(.horizontal, 8)
+                                    .padding(.vertical, 4)
+                                    .background(Color.gray.opacity(0.2))
+                                    .foregroundColor(.secondary)
+                                    .cornerRadius(8)
                             }
+                            .padding()
+                            .background(Color.gray.opacity(0.1))
+                            .cornerRadius(12)
                         }
 
                         if action.id == "running-late" {

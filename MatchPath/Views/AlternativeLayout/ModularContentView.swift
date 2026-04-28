@@ -445,9 +445,7 @@ struct ModularWayfindingView: View {
                     }
                 } else if let schedule = selectedSchedule {
                     // Show indoor stadium map with sections and amenities
-                    IndoorStadiumMapView(schedule: schedule, onIndoorCompass: {
-                        showingIndoorCompass = true
-                    })
+                    IndoorStadiumMapView(schedule: schedule, onIndoorCompass: { })
                 } else {
                     // Show schedule picker on first load
                     VStack {
@@ -513,19 +511,7 @@ struct ModularWayfindingView: View {
                     selectedSchedule: $selectedSchedule
                 )
             }
-            #if os(iOS)
-            .fullScreenCover(isPresented: $showingIndoorCompass) {
-                if let schedule = selectedSchedule {
-                    IndoorCompassView(schedule: schedule)
-                }
-            }
-            #else
-            .sheet(isPresented: $showingIndoorCompass) {
-                if let schedule = selectedSchedule {
-                    IndoorCompassView(schedule: schedule)
-                }
-            }
-            #endif
+
         }
         #if os(iOS)
         .navigationViewStyle(.stack)

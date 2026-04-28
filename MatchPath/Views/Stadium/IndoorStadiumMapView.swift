@@ -367,21 +367,25 @@ struct IndoorStadiumMapView: View {
                 }
             }
 
-            // Action button
-            Button {
-                onIndoorCompass()
-            } label: {
-                HStack {
-                    Image(systemName: "safari")
-                    Text("AR Compass Navigation")
-                        .fontWeight(.semibold)
-                }
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(Color.orange)
-                .foregroundColor(.white)
-                .cornerRadius(12)
+            // AR Compass — coming soon
+            HStack {
+                Image(systemName: "safari")
+                Text("AR Compass Navigation")
+                    .fontWeight(.semibold)
+                Spacer()
+                Text("Coming Soon")
+                    .font(.caption)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(Color.gray.opacity(0.2))
+                    .foregroundColor(.secondary)
+                    .cornerRadius(8)
             }
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(Color.gray.opacity(0.15))
+            .foregroundColor(.secondary)
+            .cornerRadius(12)
         }
         .padding()
         .background(

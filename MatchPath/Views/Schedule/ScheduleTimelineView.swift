@@ -123,21 +123,27 @@ struct ScheduleTimelineView: View {
                         .controlSize(.large)
                         .tint(.green)
 
-                        // Indoor Compass button
-                        Button {
-                            showingIndoorCompass = true
-                        } label: {
-                            HStack {
-                                Image(systemName: "safari")
-                                Text("Indoor Compass (AR)")
-                            }
-                            .font(.headline)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 56)
+                        // Indoor Compass button (coming soon)
+                        HStack {
+                            Image(systemName: "safari")
+                            Text("Indoor Compass (AR)")
+                            Spacer()
+                            Text("Coming Soon")
+                                .font(.caption)
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 4)
+                                .background(Color.gray.opacity(0.2))
+                                .cornerRadius(8)
                         }
-                        .buttonStyle(.borderedProminent)
-                        .controlSize(.large)
-                        .tint(.blue)
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
+                        .opacity(0.5)
+                        .allowsHitTesting(false)
+                        .padding()
+                        .background(Color.gray.opacity(0.1))
+                        .cornerRadius(12)
+                        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray.opacity(0.3)))
+                        .padding(.horizontal)
 
                         // Indoor Stadium Map button
                         Button {
@@ -280,30 +286,13 @@ struct ScheduleTimelineView: View {
             })
         }
         #if os(iOS)
-        .fullScreenCover(isPresented: $showingIndoorCompass) {
-            IndoorCompassView(schedule: schedule)
-        }
         .fullScreenCover(isPresented: $showingIndoorStadiumMap) {
-            IndoorStadiumMapView(schedule: schedule, onIndoorCompass: {
-                showingIndoorStadiumMap = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                    showingIndoorCompass = true
-                }
-            })
+            IndoorStadiumMapView(schedule: schedule, onIndoorCompass: { })
         }
         #else
-        .sheet(isPresented: $showingIndoorCompass) {
-            IndoorCompassView(schedule: schedule)
-                .frame(minWidth: 600, minHeight: 500)
-        }
         .sheet(isPresented: $showingIndoorStadiumMap) {
-            IndoorStadiumMapView(schedule: schedule, onIndoorCompass: {
-                showingIndoorStadiumMap = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                    showingIndoorCompass = true
-                }
-            })
-            .frame(minWidth: 800, minHeight: 600)
+            IndoorStadiumMapView(schedule: schedule, onIndoorCompass: { })
+                .frame(minWidth: 800, minHeight: 600)
         }
         #endif
     }
