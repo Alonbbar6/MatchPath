@@ -59,7 +59,7 @@ struct ScheduleBuilderHomeView: View {
                                 )
                             )
                         
-                        Text("Never Miss Kickoff Again")
+                        Text("Never Miss Game Time Again")
                             .font(.system(.largeTitle, design: .rounded, weight: .bold))
                             .multilineTextAlignment(.center)
                         
@@ -109,8 +109,8 @@ struct ScheduleBuilderHomeView: View {
                         
                         HowItWorksStep(
                             number: 1,
-                            title: "Select Your Game",
-                            description: "Choose which match you're attending"
+                            title: "Select Your Event",
+                            description: "Choose your event and venue"
                         )
                         
                         HowItWorksStep(

@@ -1,431 +1,949 @@
 {
   "stadiums": [
     {
-      "id": "stadium-azteca",
-      "name": "Estadio Azteca",
-      "city": "Mexico City",
-      "country": "Mexico",
-      "address": "Calz. de Tlalpan 3465, Santa Úrsula Coapa, Coyoacán, 04650 Ciudad de México, CDMX",
-      "latitude": 19.3029,
-      "longitude": -99.1505,
-      "capacity": 87523,
-      "timezone": "America/Mexico_City",
-      "entryGates": [
-        {
-          "id": "gate-azteca-north",
-          "name": "North Gate",
-          "latitude": 19.3039,
-          "longitude": -99.1505,
-          "recommendedFor": ["100-150"],
-          "capacity": 15000,
-          "currentCrowdLevel": "moderate"
-        },
-        {
-          "id": "gate-azteca-south",
-          "name": "South Gate",
-          "latitude": 19.3019,
-          "longitude": -99.1505,
-          "recommendedFor": ["200-250"],
-          "capacity": 12000,
-          "currentCrowdLevel": "clear"
-        }
-      ],
-      "foodOrderingAppScheme": "estadioazteca",
-      "foodOrderingAppName": "Estadio Azteca",
-      "foodOrderingWebURL": "https://www.estadioazteca.com.mx"
-    },
-    {
-      "id": "stadium-akron",
-      "name": "Estadio Akron",
-      "city": "Guadalajara",
-      "country": "Mexico",
-      "address": "Av. Estadio Chivas, Zapopan, 45110 Jalisco",
-      "latitude": 20.6899,
-      "longitude": -103.4632,
-      "capacity": 46232,
-      "timezone": "America/Mexico_City",
-      "entryGates": [
-        {
-          "id": "gate-akron-main",
-          "name": "Main Gate",
-          "latitude": 20.6909,
-          "longitude": -103.4632,
-          "recommendedFor": ["100-200"],
-          "capacity": 10000,
-          "currentCrowdLevel": "clear"
-        }
-      ],
-      "foodOrderingAppScheme": null,
-      "foodOrderingAppName": null,
-      "foodOrderingWebURL": "https://www.estadioakron.com"
-    },
-    {
-      "id": "stadium-bbva",
-      "name": "Estadio BBVA",
-      "city": "Monterrey",
-      "country": "Mexico",
-      "address": "Av. Pablo Livas 2011, La Pastora, Guadalupe, 67140 N.L.",
-      "latitude": 25.7237,
-      "longitude": -100.2442,
-      "capacity": 53500,
-      "timezone": "America/Monterrey",
-      "entryGates": [
-        {
-          "id": "gate-bbva-north",
-          "name": "North Gate",
-          "latitude": 25.7247,
-          "longitude": -100.2442,
-          "recommendedFor": ["100-200"],
-          "capacity": 12000,
-          "currentCrowdLevel": "moderate"
-        }
-      ],
-      "foodOrderingAppScheme": null,
-      "foodOrderingAppName": null,
-      "foodOrderingWebURL": "https://www.estadiobbva.com"
-    },
-    {
-      "id": "stadium-metlife",
+      "id": "metlife-stadium",
       "name": "MetLife Stadium",
-      "city": "New York / New Jersey",
+      "city": "East Rutherford, NJ",
       "country": "USA",
       "address": "1 MetLife Stadium Dr, East Rutherford, NJ 07073",
-      "latitude": 40.8128,
-      "longitude": -74.0742,
+      "latitude": 40.8135,
+      "longitude": -74.0745,
       "capacity": 82500,
       "timezone": "America/New_York",
+      "sports": ["NFL", "Soccer", "Concert"],
+      "teams": ["NY Giants", "NY Jets"],
       "entryGates": [
         {
-          "id": "gate-metlife-a",
-          "name": "Gate A",
-          "latitude": 40.8138,
-          "longitude": -74.0742,
-          "recommendedFor": ["100-150"],
-          "capacity": 15000,
+          "id": "gate-metlife-north",
+          "name": "North Gate (Gate A)",
+          "latitude": 40.8155,
+          "longitude": -74.0745,
+          "recommendedFor": ["100-130", "300-330"],
+          "capacity": 18000,
           "currentCrowdLevel": "moderate"
         },
         {
-          "id": "gate-metlife-b",
-          "name": "Gate B",
-          "latitude": 40.8118,
-          "longitude": -74.0742,
-          "recommendedFor": ["200-250"],
-          "capacity": 12000,
+          "id": "gate-metlife-south",
+          "name": "South Gate (Gate B)",
+          "latitude": 40.8115,
+          "longitude": -74.0745,
+          "recommendedFor": ["140-170", "340-370"],
+          "capacity": 18000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-metlife-east",
+          "name": "East Gate (Gate C)",
+          "latitude": 40.8135,
+          "longitude": -74.0715,
+          "recommendedFor": ["110-140", "310-340"],
+          "capacity": 15000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-metlife-west",
+          "name": "West Gate (Gate D)",
+          "latitude": 40.8135,
+          "longitude": -74.0775,
+          "recommendedFor": ["150-180", "350-380"],
+          "capacity": 15000,
           "currentCrowdLevel": "clear"
         }
       ],
-      "foodOrderingAppScheme": "metlifestadium",
-      "foodOrderingAppName": "MetLife Stadium",
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
       "foodOrderingWebURL": "https://www.metlifestadium.com"
     },
     {
-      "id": "stadium-sofi",
+      "id": "sofi-stadium",
       "name": "SoFi Stadium",
-      "city": "Los Angeles",
+      "city": "Inglewood, CA",
       "country": "USA",
-      "address": "1001 Stadium Dr, Inglewood, CA 90301",
-      "latitude": 33.9535,
+      "address": "1001 S Prairie Ave, Inglewood, CA 90301",
+      "latitude": 33.9534,
       "longitude": -118.3392,
       "capacity": 70240,
       "timezone": "America/Los_Angeles",
+      "sports": ["NFL", "Concert"],
+      "teams": ["LA Rams", "LA Chargers"],
       "entryGates": [
         {
-          "id": "gate-sofi-main",
-          "name": "Main Gate",
-          "latitude": 33.9545,
+          "id": "gate-sofi-north",
+          "name": "North Gate",
+          "latitude": 33.9554,
           "longitude": -118.3392,
-          "recommendedFor": ["100-200"],
-          "capacity": 14000,
+          "recommendedFor": ["100-150", "300-350"],
+          "capacity": 16000,
           "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-sofi-south",
+          "name": "South Gate",
+          "latitude": 33.9514,
+          "longitude": -118.3392,
+          "recommendedFor": ["151-200", "351-400"],
+          "capacity": 16000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-sofi-east",
+          "name": "East Gate",
+          "latitude": 33.9534,
+          "longitude": -118.3362,
+          "recommendedFor": ["200-250"],
+          "capacity": 12000,
+          "currentCrowdLevel": "clear"
         }
       ],
-      "foodOrderingAppScheme": "sofistadium",
-      "foodOrderingAppName": "SoFi Stadium",
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
       "foodOrderingWebURL": "https://www.sofistadium.com"
     },
     {
-      "id": "stadium-att",
+      "id": "att-stadium",
       "name": "AT&T Stadium",
-      "city": "Dallas",
+      "city": "Arlington, TX",
       "country": "USA",
       "address": "1 AT&T Way, Arlington, TX 76011",
       "latitude": 32.7473,
       "longitude": -97.0945,
       "capacity": 80000,
       "timezone": "America/Chicago",
+      "sports": ["NFL", "Concert", "Basketball"],
+      "teams": ["Dallas Cowboys"],
       "entryGates": [
         {
-          "id": "gate-att-main",
-          "name": "Main Gate",
-          "latitude": 32.7483,
+          "id": "gate-att-north",
+          "name": "North Gate",
+          "latitude": 32.7493,
           "longitude": -97.0945,
-          "recommendedFor": ["100-200"],
-          "capacity": 16000,
-          "currentCrowdLevel": "clear"
-        }
-      ],
-      "foodOrderingAppScheme": "attstadium",
-      "foodOrderingAppName": "AT&T Stadium",
-      "foodOrderingWebURL": "https://www.attstadium.com"
-    },
-    {
-      "id": "stadium-hardrock",
-      "name": "Hard Rock Stadium",
-      "city": "Miami",
-      "country": "USA",
-      "address": "347 Don Shula Dr, Miami Gardens, FL 33056",
-      "latitude": 25.9580,
-      "longitude": -80.2389,
-      "capacity": 65326,
-      "timezone": "America/New_York",
-      "entryGates": [
+          "recommendedFor": ["100-150"],
+          "capacity": 18000,
+          "currentCrowdLevel": "moderate"
+        },
         {
-          "id": "gate-north-a",
-          "name": "North Gate A",
-          "latitude": 25.9590,
-          "longitude": -80.2389,
-          "recommendedFor": ["101-120"],
-          "capacity": 12000,
+          "id": "gate-att-south",
+          "name": "South Gate",
+          "latitude": 32.7453,
+          "longitude": -97.0945,
+          "recommendedFor": ["151-200"],
+          "capacity": 18000,
           "currentCrowdLevel": "clear"
         },
         {
-          "id": "gate-south-c",
-          "name": "South Gate C",
-          "latitude": 25.9570,
-          "longitude": -80.2389,
-          "recommendedFor": ["201-220"],
-          "capacity": 10000,
-          "currentCrowdLevel": "moderate"
-        }
-      ],
-      "foodOrderingAppScheme": "hardrockstadium",
-      "foodOrderingAppName": "Hard Rock Stadium",
-      "foodOrderingWebURL": "https://www.hardrockstadium.com/concessions"
-    },
-    {
-      "id": "stadium-mercedes-benz",
-      "name": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
-      "country": "USA",
-      "address": "1 AMB Dr NW, Atlanta, GA 30313",
-      "latitude": 33.7553,
-      "longitude": -84.4006,
-      "capacity": 71000,
-      "timezone": "America/New_York",
-      "entryGates": [
-        {
-          "id": "gate-mb-north",
-          "name": "North Gate",
-          "latitude": 33.7563,
-          "longitude": -84.4006,
-          "recommendedFor": ["100-200"],
+          "id": "gate-att-east",
+          "name": "East Gate",
+          "latitude": 32.7473,
+          "longitude": -97.0915,
+          "recommendedFor": ["200-250", "300-350"],
           "capacity": 14000,
-          "currentCrowdLevel": "moderate"
-        }
-      ],
-      "foodOrderingAppScheme": "mbstadium",
-      "foodOrderingAppName": "Mercedes-Benz Stadium",
-      "foodOrderingWebURL": "https://mercedesbenzstadium.com"
-    },
-    {
-      "id": "stadium-levis",
-      "name": "Levi's Stadium",
-      "city": "San Francisco Bay Area",
-      "country": "USA",
-      "address": "4900 Marie P DeBartolo Way, Santa Clara, CA 95054",
-      "latitude": 37.4032,
-      "longitude": -121.9697,
-      "capacity": 68500,
-      "timezone": "America/Los_Angeles",
-      "entryGates": [
+          "currentCrowdLevel": "clear"
+        },
         {
-          "id": "gate-levis-main",
-          "name": "Main Gate",
-          "latitude": 37.4042,
-          "longitude": -121.9697,
-          "recommendedFor": ["100-200"],
-          "capacity": 13000,
+          "id": "gate-att-west",
+          "name": "West Gate",
+          "latitude": 32.7473,
+          "longitude": -97.0975,
+          "recommendedFor": ["251-300", "351-400"],
+          "capacity": 14000,
           "currentCrowdLevel": "clear"
         }
       ],
-      "foodOrderingAppScheme": "levisstadium",
-      "foodOrderingAppName": "Levi's Stadium",
-      "foodOrderingWebURL": "https://www.levisstadium.com"
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.attstadium.com"
     },
     {
-      "id": "stadium-lincoln",
-      "name": "Lincoln Financial Field",
-      "city": "Philadelphia",
-      "country": "USA",
-      "address": "1 Lincoln Financial Field Way, Philadelphia, PA 19148",
-      "latitude": 39.9008,
-      "longitude": -75.1675,
-      "capacity": 69796,
-      "timezone": "America/New_York",
-      "entryGates": [
-        {
-          "id": "gate-lincoln-main",
-          "name": "Main Gate",
-          "latitude": 39.9018,
-          "longitude": -75.1675,
-          "recommendedFor": ["100-200"],
-          "capacity": 13000,
-          "currentCrowdLevel": "moderate"
-        }
-      ],
-      "foodOrderingAppScheme": "lincolnfinancialfield",
-      "foodOrderingAppName": "Lincoln Financial Field",
-      "foodOrderingWebURL": "https://www.lincolnfinancialfield.com"
-    },
-    {
-      "id": "stadium-arrowhead",
-      "name": "Arrowhead Stadium",
-      "city": "Kansas City",
+      "id": "arrowhead-stadium",
+      "name": "GEHA Field at Arrowhead Stadium",
+      "city": "Kansas City, MO",
       "country": "USA",
       "address": "1 Arrowhead Dr, Kansas City, MO 64129",
       "latitude": 39.0489,
       "longitude": -94.4839,
       "capacity": 76416,
       "timezone": "America/Chicago",
+      "sports": ["NFL"],
+      "teams": ["Kansas City Chiefs"],
       "entryGates": [
         {
-          "id": "gate-arrowhead-main",
-          "name": "Main Gate",
-          "latitude": 39.0499,
+          "id": "gate-arrowhead-north",
+          "name": "Gate 1 (North)",
+          "latitude": 39.0509,
           "longitude": -94.4839,
-          "recommendedFor": ["100-200"],
-          "capacity": 15000,
-          "currentCrowdLevel": "clear"
-        }
-      ],
-      "foodOrderingAppScheme": "arrowheadstadium",
-      "foodOrderingAppName": "Arrowhead Stadium",
-      "foodOrderingWebURL": "https://www.arrowheadstadium.com"
-    },
-    {
-      "id": "stadium-gillette",
-      "name": "Gillette Stadium",
-      "city": "Boston",
-      "country": "USA",
-      "address": "1 Patriot Pl, Foxborough, MA 02035",
-      "latitude": 42.0909,
-      "longitude": -71.2643,
-      "capacity": 65878,
-      "timezone": "America/New_York",
-      "entryGates": [
-        {
-          "id": "gate-gillette-main",
-          "name": "Main Gate",
-          "latitude": 42.0919,
-          "longitude": -71.2643,
-          "recommendedFor": ["100-200"],
-          "capacity": 13000,
+          "recommendedFor": ["100-130"],
+          "capacity": 16000,
           "currentCrowdLevel": "moderate"
-        }
-      ],
-      "foodOrderingAppScheme": "gillettestadium",
-      "foodOrderingAppName": "Gillette Stadium",
-      "foodOrderingWebURL": "https://www.gillettestadium.com"
-    },
-    {
-      "id": "stadium-nrg",
-      "name": "NRG Stadium",
-      "city": "Houston",
-      "country": "USA",
-      "address": "NRG Pkwy, Houston, TX 77054",
-      "latitude": 29.6847,
-      "longitude": -95.4107,
-      "capacity": 72220,
-      "timezone": "America/Chicago",
-      "entryGates": [
+        },
         {
-          "id": "gate-nrg-main",
-          "name": "Main Gate",
-          "latitude": 29.6857,
-          "longitude": -95.4107,
-          "recommendedFor": ["100-200"],
+          "id": "gate-arrowhead-south",
+          "name": "Gate 2 (South)",
+          "latitude": 39.0469,
+          "longitude": -94.4839,
+          "recommendedFor": ["131-160"],
+          "capacity": 16000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-arrowhead-east",
+          "name": "Gate 3 (East)",
+          "latitude": 39.0489,
+          "longitude": -94.4809,
+          "recommendedFor": ["200-250", "300-350"],
           "capacity": 14000,
           "currentCrowdLevel": "clear"
         }
       ],
-      "foodOrderingAppScheme": "nrgstadium",
-      "foodOrderingAppName": "NRG Stadium",
-      "foodOrderingWebURL": "https://www.nrgpark.com"
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.chiefs.com/stadium"
     },
     {
-      "id": "stadium-lumen",
-      "name": "Lumen Field",
-      "city": "Seattle",
+      "id": "lambeau-field",
+      "name": "Lambeau Field",
+      "city": "Green Bay, WI",
       "country": "USA",
-      "address": "800 Occidental Ave S, Seattle, WA 98134",
-      "latitude": 47.5952,
-      "longitude": -122.3316,
-      "capacity": 69000,
-      "timezone": "America/Los_Angeles",
+      "address": "1265 Lombardi Ave, Green Bay, WI 54304",
+      "latitude": 44.5013,
+      "longitude": -88.0622,
+      "capacity": 81441,
+      "timezone": "America/Chicago",
+      "sports": ["NFL"],
+      "teams": ["Green Bay Packers"],
       "entryGates": [
         {
-          "id": "gate-lumen-main",
-          "name": "Main Gate",
-          "latitude": 47.5962,
-          "longitude": -122.3316,
-          "recommendedFor": ["100-200"],
-          "capacity": 13000,
+          "id": "gate-lambeau-north",
+          "name": "North Gate",
+          "latitude": 44.5033,
+          "longitude": -88.0622,
+          "recommendedFor": ["100-140"],
+          "capacity": 18000,
           "currentCrowdLevel": "moderate"
-        }
-      ],
-      "foodOrderingAppScheme": "lumenfield",
-      "foodOrderingAppName": "Lumen Field",
-      "foodOrderingWebURL": "https://www.lumenfield.com"
-    },
-    {
-      "id": "stadium-bmo",
-      "name": "BMO Field",
-      "city": "Toronto",
-      "country": "Canada",
-      "address": "170 Princes' Blvd, Toronto, ON M6K 3C3",
-      "latitude": 43.6333,
-      "longitude": -79.4187,
-      "capacity": 45500,
-      "timezone": "America/Toronto",
-      "entryGates": [
+        },
         {
-          "id": "gate-bmo-main",
-          "name": "Main Gate",
-          "latitude": 43.6343,
-          "longitude": -79.4187,
-          "recommendedFor": ["100-200"],
-          "capacity": 9000,
+          "id": "gate-lambeau-south",
+          "name": "South Gate (Atrium)",
+          "latitude": 44.4993,
+          "longitude": -88.0622,
+          "recommendedFor": ["141-180"],
+          "capacity": 18000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-lambeau-east",
+          "name": "East Gate",
+          "latitude": 44.5013,
+          "longitude": -88.0592,
+          "recommendedFor": ["300-350"],
+          "capacity": 12000,
           "currentCrowdLevel": "clear"
         }
       ],
-      "foodOrderingAppScheme": "bmofield",
-      "foodOrderingAppName": "BMO Field",
-      "foodOrderingWebURL": "https://www.bmofield.com"
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.packers.com/lambeau-field"
     },
     {
-      "id": "stadium-bcplace",
-      "name": "BC Place",
-      "city": "Vancouver",
-      "country": "Canada",
-      "address": "777 Pacific Blvd, Vancouver, BC V6B 4Y8",
-      "latitude": 49.2768,
-      "longitude": -123.1119,
-      "capacity": 54500,
-      "timezone": "America/Vancouver",
+      "id": "madison-square-garden",
+      "name": "Madison Square Garden",
+      "city": "New York, NY",
+      "country": "USA",
+      "address": "4 Pennsylvania Plaza, New York, NY 10001",
+      "latitude": 40.7505,
+      "longitude": -73.9934,
+      "capacity": 20789,
+      "timezone": "America/New_York",
+      "sports": ["NBA", "NHL", "Boxing", "Concert"],
+      "teams": ["NY Knicks", "NY Rangers"],
       "entryGates": [
         {
-          "id": "gate-bcplace-main",
-          "name": "Main Gate",
-          "latitude": 49.2778,
-          "longitude": -123.1119,
-          "recommendedFor": ["100-200"],
-          "capacity": 11000,
+          "id": "gate-msg-7thave",
+          "name": "7th Ave Entrance",
+          "latitude": 40.7505,
+          "longitude": -73.9944,
+          "recommendedFor": ["100-115", "200-215"],
+          "capacity": 6000,
           "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-msg-33rd",
+          "name": "33rd St Entrance",
+          "latitude": 40.7495,
+          "longitude": -73.9934,
+          "recommendedFor": ["116-130", "300-315"],
+          "capacity": 5000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-msg-31st",
+          "name": "31st St Entrance",
+          "latitude": 40.7515,
+          "longitude": -73.9934,
+          "recommendedFor": ["216-230", "316-330"],
+          "capacity": 5000,
+          "currentCrowdLevel": "clear"
         }
       ],
-      "foodOrderingAppScheme": "bcplace",
-      "foodOrderingAppName": "BC Place",
-      "foodOrderingWebURL": "https://www.bcplace.com"
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.msg.com"
+    },
+    {
+      "id": "chase-center",
+      "name": "Chase Center",
+      "city": "San Francisco, CA",
+      "country": "USA",
+      "address": "1 Warriors Way, San Francisco, CA 94158",
+      "latitude": 37.7679,
+      "longitude": -122.3877,
+      "capacity": 18064,
+      "timezone": "America/Los_Angeles",
+      "sports": ["NBA", "Concert"],
+      "teams": ["Golden State Warriors"],
+      "entryGates": [
+        {
+          "id": "gate-chase-main",
+          "name": "Main Entrance (Warriors Way)",
+          "latitude": 37.7669,
+          "longitude": -122.3877,
+          "recommendedFor": ["100-115", "200-215"],
+          "capacity": 5000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-chase-north",
+          "name": "North Entrance",
+          "latitude": 37.7689,
+          "longitude": -122.3877,
+          "recommendedFor": ["116-130", "300-315"],
+          "capacity": 5000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-chase-bay",
+          "name": "Bay Entrance",
+          "latitude": 37.7679,
+          "longitude": -122.3857,
+          "recommendedFor": ["216-230", "316-330"],
+          "capacity": 4000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.chasecenter.com"
+    },
+    {
+      "id": "crypto-arena",
+      "name": "Crypto.com Arena",
+      "city": "Los Angeles, CA",
+      "country": "USA",
+      "address": "1111 S Figueroa St, Los Angeles, CA 90015",
+      "latitude": 34.0430,
+      "longitude": -118.2673,
+      "capacity": 20000,
+      "timezone": "America/Los_Angeles",
+      "sports": ["NBA", "NHL", "Concert"],
+      "teams": ["LA Lakers", "LA Clippers", "LA Kings"],
+      "entryGates": [
+        {
+          "id": "gate-crypto-north",
+          "name": "North Entrance (Figueroa)",
+          "latitude": 34.0445,
+          "longitude": -118.2673,
+          "recommendedFor": ["100-115", "300-315"],
+          "capacity": 6000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-crypto-south",
+          "name": "South Entrance",
+          "latitude": 34.0415,
+          "longitude": -118.2673,
+          "recommendedFor": ["116-130", "316-330"],
+          "capacity": 5000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-crypto-east",
+          "name": "East Entrance (Chick Hearn)",
+          "latitude": 34.0430,
+          "longitude": -118.2653,
+          "recommendedFor": ["200-230"],
+          "capacity": 4000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.cryptoarena.com"
+    },
+    {
+      "id": "td-garden",
+      "name": "TD Garden",
+      "city": "Boston, MA",
+      "country": "USA",
+      "address": "100 Legends Way, Boston, MA 02114",
+      "latitude": 42.3662,
+      "longitude": -71.0621,
+      "capacity": 19156,
+      "timezone": "America/New_York",
+      "sports": ["NBA", "NHL", "Concert"],
+      "teams": ["Boston Celtics", "Boston Bruins"],
+      "entryGates": [
+        {
+          "id": "gate-tdg-main",
+          "name": "Main Entrance (Causeway St)",
+          "latitude": 42.3662,
+          "longitude": -71.0631,
+          "recommendedFor": ["100-115", "200-215"],
+          "capacity": 6000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-tdg-north",
+          "name": "North Station Entrance",
+          "latitude": 42.3672,
+          "longitude": -71.0621,
+          "recommendedFor": ["116-130", "300-315"],
+          "capacity": 5000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-tdg-portal",
+          "name": "Portal 3 Entrance",
+          "latitude": 42.3652,
+          "longitude": -71.0621,
+          "recommendedFor": ["216-230", "316-330"],
+          "capacity": 4000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.tdgarden.com"
+    },
+    {
+      "id": "united-center",
+      "name": "United Center",
+      "city": "Chicago, IL",
+      "country": "USA",
+      "address": "1901 W Madison St, Chicago, IL 60612",
+      "latitude": 41.8806,
+      "longitude": -87.6742,
+      "capacity": 20917,
+      "timezone": "America/Chicago",
+      "sports": ["NBA", "NHL", "Concert"],
+      "teams": ["Chicago Bulls", "Chicago Blackhawks"],
+      "entryGates": [
+        {
+          "id": "gate-uc-main",
+          "name": "Main Gate (Madison St)",
+          "latitude": 41.8796,
+          "longitude": -87.6742,
+          "recommendedFor": ["100-115", "300-315"],
+          "capacity": 6000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-uc-north",
+          "name": "North Gate",
+          "latitude": 41.8816,
+          "longitude": -87.6742,
+          "recommendedFor": ["116-130", "316-330"],
+          "capacity": 5000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-uc-east",
+          "name": "East Gate (United Center Dr)",
+          "latitude": 41.8806,
+          "longitude": -87.6722,
+          "recommendedFor": ["200-230"],
+          "capacity": 4000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.unitedcenter.com"
+    },
+    {
+      "id": "kaseya-center",
+      "name": "Kaseya Center",
+      "city": "Miami, FL",
+      "country": "USA",
+      "address": "601 Biscayne Blvd, Miami, FL 33132",
+      "latitude": 25.7814,
+      "longitude": -80.1870,
+      "capacity": 19600,
+      "timezone": "America/New_York",
+      "sports": ["NBA", "Concert"],
+      "teams": ["Miami Heat"],
+      "entryGates": [
+        {
+          "id": "gate-kaseya-main",
+          "name": "Main Entrance (Biscayne)",
+          "latitude": 25.7814,
+          "longitude": -80.1880,
+          "recommendedFor": ["100-115", "200-215"],
+          "capacity": 6000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-kaseya-north",
+          "name": "North Entrance",
+          "latitude": 25.7824,
+          "longitude": -80.1870,
+          "recommendedFor": ["116-130", "300-315"],
+          "capacity": 5000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-kaseya-bay",
+          "name": "Bay Entrance",
+          "latitude": 25.7814,
+          "longitude": -80.1860,
+          "recommendedFor": ["216-230", "316-330"],
+          "capacity": 4000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.kaseyacenter.com"
+    },
+    {
+      "id": "yankee-stadium",
+      "name": "Yankee Stadium",
+      "city": "Bronx, NY",
+      "country": "USA",
+      "address": "1 E 161st St, Bronx, NY 10451",
+      "latitude": 40.8296,
+      "longitude": -73.9262,
+      "capacity": 54251,
+      "timezone": "America/New_York",
+      "sports": ["MLB", "Soccer", "Concert"],
+      "teams": ["New York Yankees"],
+      "entryGates": [
+        {
+          "id": "gate-yankee-great-hall",
+          "name": "Great Hall Gate (161st St)",
+          "latitude": 40.8286,
+          "longitude": -73.9262,
+          "recommendedFor": ["100-130", "200-230"],
+          "capacity": 14000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-yankee-4",
+          "name": "Gate 4",
+          "latitude": 40.8306,
+          "longitude": -73.9262,
+          "recommendedFor": ["131-160", "300-330"],
+          "capacity": 12000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-yankee-6",
+          "name": "Gate 6 (River Ave)",
+          "latitude": 40.8296,
+          "longitude": -73.9282,
+          "recommendedFor": ["400-430"],
+          "capacity": 10000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.mlb.com/yankees/ballpark"
+    },
+    {
+      "id": "dodger-stadium",
+      "name": "Dodger Stadium",
+      "city": "Los Angeles, CA",
+      "country": "USA",
+      "address": "1000 Vin Scully Ave, Los Angeles, CA 90012",
+      "latitude": 34.0739,
+      "longitude": -118.2400,
+      "capacity": 56000,
+      "timezone": "America/Los_Angeles",
+      "sports": ["MLB", "Concert"],
+      "teams": ["Los Angeles Dodgers"],
+      "entryGates": [
+        {
+          "id": "gate-dodger-main",
+          "name": "Main Gate (Vin Scully Ave)",
+          "latitude": 34.0729,
+          "longitude": -118.2400,
+          "recommendedFor": ["100-130", "200-230"],
+          "capacity": 14000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-dodger-left",
+          "name": "Left Field Gate",
+          "latitude": 34.0739,
+          "longitude": -118.2430,
+          "recommendedFor": ["300-330"],
+          "capacity": 10000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-dodger-right",
+          "name": "Right Field Gate",
+          "latitude": 34.0739,
+          "longitude": -118.2370,
+          "recommendedFor": ["330-365"],
+          "capacity": 10000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.mlb.com/dodgers/ballpark"
+    },
+    {
+      "id": "fenway-park",
+      "name": "Fenway Park",
+      "city": "Boston, MA",
+      "country": "USA",
+      "address": "4 Jersey St, Boston, MA 02215",
+      "latitude": 42.3467,
+      "longitude": -71.0972,
+      "capacity": 37755,
+      "timezone": "America/New_York",
+      "sports": ["MLB", "Concert"],
+      "teams": ["Boston Red Sox"],
+      "entryGates": [
+        {
+          "id": "gate-fenway-main",
+          "name": "Main Gate (Jersey St)",
+          "latitude": 42.3457,
+          "longitude": -71.0972,
+          "recommendedFor": ["Field Box", "Loge Box"],
+          "capacity": 10000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-fenway-a",
+          "name": "Gate A (Yawkey Way)",
+          "latitude": 42.3467,
+          "longitude": -71.0992,
+          "recommendedFor": ["Bleachers", "Right Field Roof"],
+          "capacity": 8000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-fenway-d",
+          "name": "Gate D (Brookline Ave)",
+          "latitude": 42.3467,
+          "longitude": -71.0952,
+          "recommendedFor": ["Grandstand", "Upper Bleachers"],
+          "capacity": 8000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.mlb.com/redsox/ballpark"
+    },
+    {
+      "id": "wrigley-field",
+      "name": "Wrigley Field",
+      "city": "Chicago, IL",
+      "country": "USA",
+      "address": "1060 W Addison St, Chicago, IL 60613",
+      "latitude": 41.9484,
+      "longitude": -87.6553,
+      "capacity": 41649,
+      "timezone": "America/Chicago",
+      "sports": ["MLB", "Concert"],
+      "teams": ["Chicago Cubs"],
+      "entryGates": [
+        {
+          "id": "gate-wrigley-main",
+          "name": "Main Gate (Addison St)",
+          "latitude": 41.9474,
+          "longitude": -87.6553,
+          "recommendedFor": ["Field Box", "Terrace Box"],
+          "capacity": 10000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-wrigley-clark",
+          "name": "Clark St Gate",
+          "latitude": 41.9484,
+          "longitude": -87.6563,
+          "recommendedFor": ["Upper Deck", "Bleachers"],
+          "capacity": 10000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-wrigley-sheffield",
+          "name": "Sheffield Ave Gate",
+          "latitude": 41.9484,
+          "longitude": -87.6543,
+          "recommendedFor": ["Right Field Bleachers"],
+          "capacity": 8000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.mlb.com/cubs/ballpark"
+    },
+    {
+      "id": "oracle-park",
+      "name": "Oracle Park",
+      "city": "San Francisco, CA",
+      "country": "USA",
+      "address": "24 Willie Mays Plaza, San Francisco, CA 94107",
+      "latitude": 37.7786,
+      "longitude": -122.3893,
+      "capacity": 41915,
+      "timezone": "America/Los_Angeles",
+      "sports": ["MLB", "Concert"],
+      "teams": ["San Francisco Giants"],
+      "entryGates": [
+        {
+          "id": "gate-oracle-main",
+          "name": "Main Gate (Willie Mays Plaza)",
+          "latitude": 37.7776,
+          "longitude": -122.3893,
+          "recommendedFor": ["Field Club", "Lower Box"],
+          "capacity": 10000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-oracle-left",
+          "name": "Left Field Gate",
+          "latitude": 37.7786,
+          "longitude": -122.3913,
+          "recommendedFor": ["Left Field Bleachers", "Arcade"],
+          "capacity": 8000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-oracle-third",
+          "name": "Third Base Gate",
+          "latitude": 37.7786,
+          "longitude": -122.3873,
+          "recommendedFor": ["Upper Deck", "View Box"],
+          "capacity": 8000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.mlb.com/giants/ballpark"
+    },
+    {
+      "id": "allegiant-stadium",
+      "name": "Allegiant Stadium",
+      "city": "Las Vegas, NV",
+      "country": "USA",
+      "address": "3333 Al Davis Way, Las Vegas, NV 89118",
+      "latitude": 36.0909,
+      "longitude": -115.1833,
+      "capacity": 65000,
+      "timezone": "America/Los_Angeles",
+      "sports": ["NFL", "Soccer", "Concert"],
+      "teams": ["Las Vegas Raiders"],
+      "entryGates": [
+        {
+          "id": "gate-allegiant-north",
+          "name": "North Gate",
+          "latitude": 36.0929,
+          "longitude": -115.1833,
+          "recommendedFor": ["100-150"],
+          "capacity": 15000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-allegiant-south",
+          "name": "South Gate",
+          "latitude": 36.0889,
+          "longitude": -115.1833,
+          "recommendedFor": ["151-200"],
+          "capacity": 15000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-allegiant-east",
+          "name": "Al Davis Way Gate",
+          "latitude": 36.0909,
+          "longitude": -115.1803,
+          "recommendedFor": ["200-250", "300-350"],
+          "capacity": 12000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.allegiantstadium.com"
+    },
+    {
+      "id": "state-farm-stadium",
+      "name": "State Farm Stadium",
+      "city": "Glendale, AZ",
+      "country": "USA",
+      "address": "1 Cardinals Dr, Glendale, AZ 85305",
+      "latitude": 33.5277,
+      "longitude": -112.2626,
+      "capacity": 72200,
+      "timezone": "America/Phoenix",
+      "sports": ["NFL", "Soccer", "Concert", "Basketball"],
+      "teams": ["Arizona Cardinals"],
+      "entryGates": [
+        {
+          "id": "gate-statefarm-north",
+          "name": "North Gate",
+          "latitude": 33.5297,
+          "longitude": -112.2626,
+          "recommendedFor": ["100-140"],
+          "capacity": 16000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-statefarm-south",
+          "name": "South Gate",
+          "latitude": 33.5257,
+          "longitude": -112.2626,
+          "recommendedFor": ["141-180"],
+          "capacity": 16000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-statefarm-east",
+          "name": "East Gate",
+          "latitude": 33.5277,
+          "longitude": -112.2596,
+          "recommendedFor": ["200-250", "300-350"],
+          "capacity": 14000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.statefarmstadium.com"
+    },
+    {
+      "id": "hard-rock-stadium",
+      "name": "Hard Rock Stadium",
+      "city": "Miami Gardens, FL",
+      "country": "USA",
+      "address": "347 Don Shula Dr, Miami Gardens, FL 33056",
+      "latitude": 25.9580,
+      "longitude": -80.2389,
+      "capacity": 65326,
+      "timezone": "America/New_York",
+      "sports": ["NFL", "Soccer", "Concert"],
+      "teams": ["Miami Dolphins"],
+      "entryGates": [
+        {
+          "id": "gate-hardrock-north",
+          "name": "North Gate",
+          "latitude": 25.9600,
+          "longitude": -80.2389,
+          "recommendedFor": ["100-150"],
+          "capacity": 14000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-hardrock-south",
+          "name": "South Gate",
+          "latitude": 25.9560,
+          "longitude": -80.2389,
+          "recommendedFor": ["151-200"],
+          "capacity": 14000,
+          "currentCrowdLevel": "clear"
+        },
+        {
+          "id": "gate-hardrock-east",
+          "name": "East Gate",
+          "latitude": 25.9580,
+          "longitude": -80.2359,
+          "recommendedFor": ["200-250", "300-350"],
+          "capacity": 12000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": "hardrockstadium",
+      "foodOrderingAppName": "Hard Rock Stadium",
+      "foodOrderingWebURL": "https://www.hardrockstadium.com"
+    },
+    {
+      "id": "q2-stadium",
+      "name": "Q2 Stadium",
+      "city": "Austin, TX",
+      "country": "USA",
+      "address": "10414 McKalla Place, Austin, TX 78758",
+      "latitude": 30.3879,
+      "longitude": -97.7191,
+      "capacity": 20738,
+      "timezone": "America/Chicago",
+      "sports": ["MLS", "Soccer", "Concert"],
+      "teams": ["Austin FC"],
+      "entryGates": [
+        {
+          "id": "gate-q2-main",
+          "name": "Main Gate",
+          "latitude": 30.3869,
+          "longitude": -97.7191,
+          "recommendedFor": ["100-115", "200-215"],
+          "capacity": 6000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-q2-north",
+          "name": "North Gate",
+          "latitude": 30.3889,
+          "longitude": -97.7191,
+          "recommendedFor": ["116-130", "300-315"],
+          "capacity": 5000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.austinfc.com/q2-stadium"
+    },
+    {
+      "id": "paycom-center",
+      "name": "Paycom Center",
+      "city": "Oklahoma City, OK",
+      "country": "USA",
+      "address": "100 W Reno Ave, Oklahoma City, OK 73102",
+      "latitude": 35.4634,
+      "longitude": -97.5151,
+      "capacity": 18203,
+      "timezone": "America/Chicago",
+      "sports": ["NBA", "Concert"],
+      "teams": ["Oklahoma City Thunder"],
+      "entryGates": [
+        {
+          "id": "gate-paycom-main",
+          "name": "Main Entrance (Reno Ave)",
+          "latitude": 35.4624,
+          "longitude": -97.5151,
+          "recommendedFor": ["100-115", "300-315"],
+          "capacity": 5000,
+          "currentCrowdLevel": "moderate"
+        },
+        {
+          "id": "gate-paycom-north",
+          "name": "North Entrance",
+          "latitude": 35.4644,
+          "longitude": -97.5151,
+          "recommendedFor": ["116-130", "200-230"],
+          "capacity": 5000,
+          "currentCrowdLevel": "clear"
+        }
+      ],
+      "foodOrderingAppScheme": null,
+      "foodOrderingAppName": null,
+      "foodOrderingWebURL": "https://www.paycomcenter.com"
     }
   ]
 }

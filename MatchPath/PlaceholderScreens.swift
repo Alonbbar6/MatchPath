@@ -47,7 +47,7 @@ struct AppSettingsView: View {
                 }
 
                 Section(header: Text("Legal")) {
-                    Text("This app is not affiliated with, endorsed by, or connected to any official tournament organizers. All tournament data is provided for informational purposes only.")
+                    Text("This app is not affiliated with, endorsed by, or connected to any sports leagues, teams, or event organizers. All venue and event data is provided for informational purposes only.")
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
