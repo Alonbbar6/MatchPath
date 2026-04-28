@@ -88,15 +88,6 @@ struct ScheduleBuilderHomeView: View {
                     .controlSize(.large)
                     .padding(.horizontal)
 
-                    // Limited time free access
-                    HStack(spacing: 6) {
-                        Image(systemName: "clock.badge.checkmark.fill")
-                            .foregroundColor(.orange)
-                        Text("Limited time: Free access")
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                            .foregroundColor(.orange)
-                    }
 
                     // Trust Indicators
                     HStack(spacing: 24) {
@@ -264,15 +255,6 @@ struct MySchedulesView: View {
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
 
-            HStack(spacing: 6) {
-                Image(systemName: "clock.badge.checkmark.fill")
-                    .foregroundColor(.orange)
-                Text("Limited time: Free access")
-                    .font(.caption)
-                    .fontWeight(.medium)
-                    .foregroundColor(.orange)
-            }
-            .padding(.top, 8)
         }
         .padding()
     }

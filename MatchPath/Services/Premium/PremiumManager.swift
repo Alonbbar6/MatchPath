@@ -11,9 +11,7 @@ class PremiumManager: ObservableObject {
 
     // MARK: - Published Properties
 
-    /// Set to true to give all users free access (no paywall)
-    /// Set to false when IAP products are configured in App Store Connect
-    private static let FREE_ACCESS_FOR_ALL = true
+    private static let FREE_ACCESS_FOR_ALL = false
 
     @Published var isPremium: Bool = FREE_ACCESS_FOR_ALL
     @Published var isProcessingPurchase: Bool = false
